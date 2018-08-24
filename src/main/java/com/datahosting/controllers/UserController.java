@@ -11,7 +11,7 @@ import com.datahosting.model.User;
 import com.datahosting.service.UserService;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/u")
 @ComponentScan
 public class UserController {
 
@@ -29,7 +29,7 @@ public class UserController {
 		userService.validateUser(user);
 	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String registerUser(@RequestBody User user) {
 		return userService.registerUser(user);
 	}

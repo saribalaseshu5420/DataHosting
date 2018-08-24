@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/customjs/user.js"></script>
+    <script src="js/customjs/utils.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Untitled</title>
@@ -25,18 +27,16 @@
 				</div>
 				<form id="Login">
 					<div class="form-group">
-						<input type="text" class="form-control" id=""
-							placeholder="Username">
+						<input type="text" class="form-control" id="login_userName" placeholder="Username">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" id=""
-							placeholder="Password">
+						<input type="password" class="form-control" id="login_password" placeholder="Password">
 					</div>
 					<!-- <div class="forgot">
 			        <a href="reset.html">Forgot password?</a>
 					</div>-->
-					<button type="submit" class="btn btn-primary pull-left">Submit</button>
-					<a href="register.html" class="pull-right voffset1">Register</a>
+					<button type="submit" class="btn btn-primary pull-left" id="login_submit">Submit</button>
+					<a href="register.html" class="pull-right voffset1" id="login_register">Register</a>
 				</form>
 			</div>
 		</div>
