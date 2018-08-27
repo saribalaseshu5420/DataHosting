@@ -17,7 +17,8 @@ public class UserRepository {
 
 	public void validateUser(User user) {
 		Query query = new Query();
-		query.addCriteria(Criteria.where("userId").is(user.getUserId()));
+		query.addCriteria(Criteria.where("email").is(user.getEmail()));
+		query.addCriteria(Criteria.where("password").is(user.getPassword()));
 		mongoTemplate.find(query, User.class, "users");
 	}
 

@@ -1,9 +1,9 @@
-functin ajaxCall(requestUrl, reqMethod, jsonData, callBack){
+function ajaxCall(requestUrl, reqMethod, jsonData, callBack){
 	$.ajax({
 		url:requestUrl,
 		type:reqMethod,
 		data:jsonData,
-		contentType:'application/json'
+		contentType:'application/json',
 		success:function(response){
 			callBack(response);
 		},
